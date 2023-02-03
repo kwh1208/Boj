@@ -18,7 +18,7 @@ public class Boj_14719 {
         for(int i = 0; i < W; ++i) {
             present[i] = Integer.parseInt(str2.nextToken());
         }
-
+        
         int[] max_LR = new int[W];
         int[] max_RL = new int[W];
         max_LR[0] = present[0];
