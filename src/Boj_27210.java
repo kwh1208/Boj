@@ -7,9 +7,6 @@ public class Boj_27210 {
     static int[] stone;
     static int[] sum;
 
-    public Boj_27210() {
-    }
-
     public static void main(String[] args) {
         sum[0] = 0;
 
