@@ -1,38 +1,27 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static java.lang.System.*;
+
 public class Boj_27210 {
-    static Scanner sc;
-    static int N;
-    static int[] stone;
-    static int[] sum;
+    static Scanner sc = new Scanner(in);
+    static int N = sc.nextInt();
+    static int[] stone = new int[N];
+    static int sum[] =  new int[N+1];
 
     public static void main(String[] args) {
         sum[0] = 0;
-
-        int max;
-        for(max = 0; max < N; ++max) {
+        for (int i = 0; i < N; i++) {
             int tmp = sc.nextInt();
-            if (tmp == 1) {
-                stone[max] = 1;
-            } else {
-                stone[max] = -1;
-            }
+            if(tmp==1) stone[i] = 1;
+            else stone[i] = -1;
         }
 
-        for(max = 1; max <= N; ++max) {
-            sum[max] = sum[max - 1] + stone[max - 1];
+        for (int i = 1; i <= N; i++) {
+            sum[i] = sum[i-1]+stone[i-1];
         }
-
         Arrays.sort(sum);
-        max = Math.abs(sum[N] - sum[0]);
-        System.out.println(max);
-    }
-
-    static {
-        sc = new Scanner(System.in);
-        N = sc.nextInt();
-        stone = new int[N];
-        sum = new int[N + 1];
+        int max = Math.abs(sum[N]-sum[0]);
+        out.println(max);
     }
 }
