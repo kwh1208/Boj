@@ -45,7 +45,7 @@ public class Boj_11728 {
         if(chk==2) {for (int i = start_1; i < n; i++) {
             sb.append(num1[i]+" ");
         }}
-        System.out.println(sb.toString());
+        System.out.println(sb);
         }
 
 
