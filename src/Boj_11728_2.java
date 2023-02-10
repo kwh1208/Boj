@@ -26,9 +26,9 @@ public class Boj_11728_2 {
         }
         quicksort(num1);
         for (int i = 0; i < n+m; i++) {
-            sb.append(num1[i]+" ");
+            sb.append(num1[i]).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
     public static void quicksort(int[] arr){
         quicksort(arr, 0, arr.length-1);
