@@ -31,7 +31,6 @@ public class Boj_14465 {
             if(light[e]) tmp++;
             if(tmp<ans) ans = tmp;
         }
-        if(ans>0) System.out.println(ans);
-        else System.out.println(0);
+        System.out.println(Math.max(ans, 0));
     }
 }
