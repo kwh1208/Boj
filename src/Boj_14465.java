@@ -23,13 +23,12 @@ public class Boj_14465 {
             if(light[i]) ans++;
         }
         int tmp = ans;
-        while (true){
-            if(e==n) break;
-            if(light[s]) tmp--;
+        while (e != n) {
+            if (light[s]) tmp--;
             s++;
             e++;
-            if(light[e]) tmp++;
-            if(tmp<ans) ans = tmp;
+            if (light[e]) tmp++;
+            if (tmp < ans) ans = tmp;
         }
         System.out.println(Math.max(ans, 0));
     }
