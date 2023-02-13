@@ -2,7 +2,6 @@ import java.util.*;
 
 
 public class Boj_1026{
-
     public static void main(String[] args){
         Scanner input= new Scanner(System.in);
         int N = input.nextInt();
