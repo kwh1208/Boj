@@ -1,5 +1,3 @@
-package solved;
-
 import java.util.*;
 
 import static java.lang.System.*;
