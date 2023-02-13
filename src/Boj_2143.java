@@ -8,6 +8,7 @@ import static java.lang.System.*;
 
 public class Boj_2143 {
     public static void main(String[] args) throws IOException {
+
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         int T = Integer.parseInt(br.readLine());
         int A = Integer.parseInt(br.readLine());
