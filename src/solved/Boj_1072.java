@@ -1,3 +1,5 @@
+package solved;
+
 import java.util.*;
 public class Boj_1072 {
     public static void main(String[] args)   {

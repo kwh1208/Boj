@@ -1,3 +1,5 @@
+package solved;
+
 import java.util.Scanner;
 
 public class Boj_2737 {
