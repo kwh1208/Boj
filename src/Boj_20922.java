@@ -21,7 +21,8 @@ public class Boj_20922 {
         int s = 0, e = 0;
         int ans = 0;
 
-        while (e < n) {
+        while (true) {
+            if(e==n) break;
             while (e < n&&cnt[numbers[e]] + 1 <= k) {
                 cnt[numbers[e++]]++;
             }
