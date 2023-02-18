@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Boj_17425 {
@@ -21,7 +20,7 @@ public class Boj_17425 {
         }
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            sb.append(ans[Integer.parseInt(br.readLine())]+"\n");
+            sb.append(ans[Integer.parseInt(br.readLine())]).append("\n");
         }
         System.out.println(sb);
     }
