@@ -27,7 +27,6 @@ public class Boj_2559 {
             int tmp = prefix[i+k]-prefix[i];
             if(tmp>ans) {ans=tmp;}
         }
-
         System.out.println(ans);
     }
 }
