@@ -25,10 +25,9 @@ public class Boj_14252 {
     public static int gcd(int x, int y){
         int x1 = Math.max(x, y);
         int y1 = Math.min(x, y);
-        while (true){
-            if(x1%y1==0) break;
+        while (x1 % y1 != 0) {
             int tmp = y1;
-            y1 = x1%y1;
+            y1 = x1 % y1;
             x1 = tmp;
         }
         return y1;
@@ -38,12 +37,6 @@ public class Boj_14252 {
             if(gcd(a, i)==1&&gcd(i, b)==1){
                 return 1;}
         }
-        for (int i = a+1; i <b; i++) {
-            for (int j = i+1; j < b; j++) {
-                if(gcd(a, i)==1&&gcd(i, j)==1&&gcd(j,b)==1)
-                    return 2;
-            }
-        }
-        return 3;
+        return 2;
     }
 }
