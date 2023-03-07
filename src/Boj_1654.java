@@ -16,18 +16,18 @@ public class Boj_1654 {
         long s = 1;
         long e = Integer.MAX_VALUE;
         long ans = 0;
-        while (true){
-            if(s>e) break;
-            long mid=(s+e)/2;
+        while (s <= e) {
+            long mid = (s + e) / 2;
             int cnt = 0;
             for (int i = 0; i < k; i++) {
-                cnt+=length[i]/mid;
+                cnt += length[i] / mid;
             }
-            if(cnt>=n){
-                s=mid+1;
-                ans=mid;
+            if (cnt >= n) {
+                s = mid + 1;
+                ans = mid;
+            } else {
+                e = mid - 1;
             }
-            else {e=mid-1;}
         }
         System.out.println(ans);
     }
