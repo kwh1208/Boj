@@ -20,7 +20,7 @@ public class Boj_2805 {
         str = new StringTokenizer(br.readLine());
         for(int i = 0; i < N; i++) {
             tree[i] = Integer.parseInt(str.nextToken());
-            max=Math.max(max, tree[i]);
+            max=Math.max(max, tree[i]);//e가 될 부분 저장.
         }
         int s = 0;
         int e = max;
@@ -31,9 +31,10 @@ public class Boj_2805 {
             long sum = 0;
             for(int h : tree) {
                 if(h > mid) {
-                    sum += (h - mid);
+                    sum += (h - mid);//나무마다 mid보다 큰부분은 잘라갈거임.
                 }
             }
+            //조건 확인
             if(sum < M) {
                 e = mid-1;
             }
