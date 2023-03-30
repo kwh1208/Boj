@@ -25,7 +25,7 @@ public class Boj_1487 {
                     total+=sell_price-order_price[j];
                 }
             }
-            if(total>max) {
+            if(total>max||total==max&&sell_price<ans) {
                 max = total;
                 ans = sell_price;}
         }
