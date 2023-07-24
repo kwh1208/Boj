@@ -25,5 +25,6 @@ public class Boj_10211 {
             }
             System.out.println(max);
         }
+
     }
 }
