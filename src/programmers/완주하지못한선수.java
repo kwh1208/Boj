@@ -9,6 +9,7 @@ public class 완주하지못한선수 {
         String[] com = {"eden", "kiki"};
         System.out.println(solution.solution(parti, com));
     }
+
     static class Solution {
         public String solution(String[] participant, String[] completion) {
             HashMap<String, Integer> par = new HashMap<>();

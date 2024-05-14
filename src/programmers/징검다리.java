@@ -2,7 +2,6 @@ package programmers;
 import java.util.Arrays;
 
 public class 징검다리 {
-
     public static class Solution {
         public int solution(int distance, int[] rocks, int n) {
             Arrays.sort(rocks);

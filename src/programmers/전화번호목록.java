@@ -3,6 +3,7 @@ package programmers;
 import java.util.Arrays;
 
 public class 전화번호목록 {
+
     class Solution {
         public boolean solution(String[] phone_book) {
             Arrays.sort(phone_book);

@@ -9,6 +9,7 @@ public class 베스트앨범 {
         int[] plays = {45, 50, 40, 60, 70};
         solution.solution(genres, plays);
     }
+
     static class Solution {
         public int[] solution(String[] genres, int[] plays) {
             HashMap<String, Integer> numOfPlays = new HashMap<>();

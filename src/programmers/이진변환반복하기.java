@@ -9,6 +9,7 @@ public class 이진변환반복하기 {
         int[] solution3 = solution("1111111");
         System.out.println(solution3[0]+" "+solution3[1]);
     }
+
     public static int[] solution(String s) {
         int[] answer = {0, 0};
 

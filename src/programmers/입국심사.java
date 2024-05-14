@@ -5,6 +5,7 @@ public class 입국심사 {
         int[] a = {7, 10};
         System.out.println(solution(6, a));
     }
+
     public static long solution(int n, int[] times) {
         long answer = 0;
         long s = 0;
